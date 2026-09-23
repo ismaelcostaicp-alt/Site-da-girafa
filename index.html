@@ -7,10 +7,17 @@
     <link rel="icon" type="image/png" href="Favicon.png">
 </head>
 <body>
-    <!--Isto é um comentário-->
-    <div class="texto"> <!--Este é um div de texto-->
+    <audio id="musica" src="Background music.mp3" loop></audio>
+
+    <div id="tela-entrada" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #fdfdfd; display: flex; align-items: center; justify-content: center; z-index: 999999;">
+        <button onclick="document.getElementById('musica').play(); document.getElementById('tela-entrada').style.display='none';" style="padding: 20px 40px; font-size: 20px; font-weight: bold; color: #1d1616; background-color: #fff; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 15px rgba(255,255,255,0.2);">
+            Entrar no Site com Música
+        </button>
+    </div>
+    
+    <div class="texto"> 
         <h1>Girafa Dançante</h1>    
-        <hr color="black"> <!--Isso é uma linha horizontal-->
+        <hr color="black"> 
         <p>ela dança mt bem!</p>
         <p>(Meu primeiro site)</p>
         <h4>Oque fazer??</h4>
@@ -19,13 +26,10 @@
             <li>Ouvir a música da girafa</li>
             <li>Clicar no link</li>
         </ol>
-        <br> <!--Isso é um quebra linha-->
+        <br> 
     </div>
     <div class="video">
         <video autoplay loop muted src="Dancing Giraffe Screensaver 2 Hours Of Silence Funny Cartoon Character Background 4K Video, No Audio.mp4"></video>
-    </div>
-    <div class="audio">
-        <audio autoplay loop src="Background music.mp3"></audio>  
     </div>
     <div class="links">
         <a class="link" href="https://www.rickroll.it/rickroll.mp4" > <br> Link informativo</a>
